@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A03ACF0F2989D30E002F9FF7 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03ACF0E2989D30E002F9FF7 /* CategoriesTableViewController.swift */; };
+		A03ACF122989D435002F9FF7 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03ACF112989D435002F9FF7 /* CategoryRepository.swift */; };
 		A04BA13429885AF500B431EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04BA13329885AF500B431EA /* AppDelegate.swift */; };
 		A04BA13629885AF500B431EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04BA13529885AF500B431EA /* SceneDelegate.swift */; };
 		A04BA13B29885AF500B431EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04BA13929885AF500B431EA /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A03ACF0E2989D30E002F9FF7 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		A03ACF112989D435002F9FF7 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
 		A04BA13029885AF500B431EA /* AppDIOInnovationTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppDIOInnovationTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04BA13329885AF500B431EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A04BA13529885AF500B431EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A03ACF102989D40E002F9FF7 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A03ACF112989D435002F9FF7 /* CategoryRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		A04BA12729885AF500B431EA = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +82,7 @@
 		A04BA13229885AF500B431EA /* AppDIOInnovationTasks */ = {
 			isa = PBXGroup;
 			children = (
+				A03ACF102989D40E002F9FF7 /* Repositories */,
 				A04BA14D298867F700B431EA /* Models */,
 				A04BA14A29885D0600B431EA /* Controllers */,
 				A04BA13329885AF500B431EA /* AppDelegate.swift */,
@@ -89,6 +102,7 @@
 				A04BA15229886CF700B431EA /* Cells */,
 				A04BA14B29885D6D00B431EA /* TasksTableViewController.swift */,
 				A096933029888E050080CDB0 /* CreateTaskViewController.swift */,
+				A03ACF0E2989D30E002F9FF7 /* CategoriesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,9 +202,11 @@
 				A04BA13429885AF500B431EA /* AppDelegate.swift in Sources */,
 				A04BA13E29885AF500B431EA /* AppDIOInnovationTasks.xcdatamodeld in Sources */,
 				A0969335298890640080CDB0 /* DateTimeTableViewCell.swift in Sources */,
+				A03ACF0F2989D30E002F9FF7 /* CategoriesTableViewController.swift in Sources */,
 				A04BA14F2988687C00B431EA /* Task.swift in Sources */,
 				A04BA14C29885D6D00B431EA /* TasksTableViewController.swift in Sources */,
 				A04BA13629885AF500B431EA /* SceneDelegate.swift in Sources */,
+				A03ACF122989D435002F9FF7 /* CategoryRepository.swift in Sources */,
 				A04BA1512988693700B431EA /* Category.swift in Sources */,
 				A096933129888E050080CDB0 /* CreateTaskViewController.swift in Sources */,
 			);

@@ -16,6 +16,8 @@ class CreateTaskViewController: UITableViewController, UITextFieldDelegate {
     
     private var selectedIndexPath: IndexPath?
     
+    private var dateFormatter: DateFormatter = DateFormatter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         datePicker.datePickerMode = .dateAndTime
@@ -90,7 +92,7 @@ class CreateTaskViewController: UITableViewController, UITextFieldDelegate {
         if let indexPath = self.selectedIndexPath {
             let cell = tableView.cellForRow(at: indexPath) as? DateTimeTableViewCell
             if let dateCell = cell {
-                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
                 dateCell.dateTimeTextField.text = dateFormatter.string(from: datePicker.date)
                 self.view.endEditing(true)
             }
