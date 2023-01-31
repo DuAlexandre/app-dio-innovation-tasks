@@ -18,10 +18,16 @@ class CreateTaskViewController: UITableViewController, UITextFieldDelegate {
     
     private var dateFormatter: DateFormatter = DateFormatter()
     
+    private var taskRepository = TaskRepository.instance
+    private var taskRepository2 = TaskRepository.instance
+    
+    var task: Task = Task()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         datePicker.datePickerMode = .dateAndTime
         datePicker.preferredDatePickerStyle = .wheels
+        dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -50,6 +56,7 @@ class CreateTaskViewController: UITableViewController, UITextFieldDelegate {
         
         if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath)
+            cell.textLabel?.text = self.task.category.name
             return cell
         }
         
@@ -92,9 +99,21 @@ class CreateTaskViewController: UITableViewController, UITextFieldDelegate {
         if let indexPath = self.selectedIndexPath {
             let cell = tableView.cellForRow(at: indexPath) as? DateTimeTableViewCell
             if let dateCell = cell {
-                dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
                 dateCell.dateTimeTextField.text = dateFormatter.string(from: datePicker.date)
                 self.view.endEditing(true)
+                self.task.date = datePicker.date
+            }
+        }
+    }
+    
+    // MARK: - Segue Methods
+    // Método é chamado toda vez que o segue é ativado
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ToCategoriesTableViewController" {
+            let categoriesController = segue.destination as! CategoriesTableViewController
+            categoriesController.choosenCategory = { category in
+                self.task.category = category
+                self.tableView.reloadData()
             }
         }
     }

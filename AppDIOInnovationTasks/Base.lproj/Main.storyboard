@@ -164,7 +164,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="HY9-Y8-zST" kind="show" id="ofM-v4-NDe"/>
+                                    <segue destination="HY9-Y8-zST" kind="show" identifier="ToCategoriesTableViewController" id="ofM-v4-NDe"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DateCell" rowHeight="50" id="H3L-Pg-Xhq" customClass="DateTimeTableViewCell" customModule="AppDIOInnovationTasks" customModuleProvider="target">
@@ -212,10 +212,10 @@
             </objects>
             <point key="canvasLocation" x="1168.7022900763359" y="4.9295774647887329"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Categories Table View Controller-->
         <scene sceneID="Or9-o7-gng">
             <objects>
-                <tableViewController id="HY9-Y8-zST" sceneMemberID="viewController">
+                <tableViewController id="HY9-Y8-zST" customClass="CategoriesTableViewController" customModule="AppDIOInnovationTasks" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="uC3-yI-vrr">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,7 +231,7 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NxB-lM-8hk">
                                             <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
