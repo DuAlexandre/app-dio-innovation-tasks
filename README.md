@@ -36,7 +36,7 @@ A missão da DIO é criar novas possibilidades para pessoas e organizações de 
 <br>
 
 <p align="center">
-  <img src="./AppDIONews/SupportingFiles/pics/SWIFT.jpeg" alt="formation-logo">
+  <img src="./AppDIOInnovationTasks/Pics/SWIFT.jpeg" alt="formation-logo">
 </p>
 
 <br>
@@ -88,11 +88,11 @@ git clone git@github.com:DuAlexandre/app-dio-innovation-tasks.git
 
 <br>
 
-<img src="">
+<img src="./AppDIOInnovationTasks/Pics/Captura de Tela 2023-01-31 às 21.35.59.png">
 
 <br>
 
-<img align="center" src="">
+<img src="./AppDIOInnovationTasks/Pics/Captura de Tela 2023-01-31 às 21.36.22.png">
 
 <br>
 

@@ -10,8 +10,9 @@
 		A03ACF0F2989D30E002F9FF7 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03ACF0E2989D30E002F9FF7 /* CategoriesTableViewController.swift */; };
 		A03ACF122989D435002F9FF7 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03ACF112989D435002F9FF7 /* CategoryRepository.swift */; };
 		A03ACF142989DB96002F9FF7 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03ACF132989DB96002F9FF7 /* TaskRepository.swift */; };
-		A03ACF182989ECF1002F9FF7 /* Captura de Tela 2023-01-31 às 21.36.22.png in Resources */ = {isa = PBXBuildFile; fileRef = A03ACF172989ECF1002F9FF7 /* Captura de Tela 2023-01-31 às 21.36.22.png */; };
 		A03ACF1A2989ECF9002F9FF7 /* Captura de Tela 2023-01-31 às 21.36.22.png in Resources */ = {isa = PBXBuildFile; fileRef = A03ACF192989ECF9002F9FF7 /* Captura de Tela 2023-01-31 às 21.36.22.png */; };
+		A03ACF1C2989EDA5002F9FF7 /* Captura de Tela 2023-01-31 às 21.35.59.png in Resources */ = {isa = PBXBuildFile; fileRef = A03ACF1B2989EDA5002F9FF7 /* Captura de Tela 2023-01-31 às 21.35.59.png */; };
+		A03ACF1E2989EDB9002F9FF7 /* SWIFT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A03ACF1D2989EDB9002F9FF7 /* SWIFT.jpeg */; };
 		A04BA13429885AF500B431EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04BA13329885AF500B431EA /* AppDelegate.swift */; };
 		A04BA13629885AF500B431EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04BA13529885AF500B431EA /* SceneDelegate.swift */; };
 		A04BA13B29885AF500B431EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04BA13929885AF500B431EA /* Main.storyboard */; };
@@ -32,8 +33,9 @@
 		A03ACF112989D435002F9FF7 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
 		A03ACF132989DB96002F9FF7 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		A03ACF152989EA9C002F9FF7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		A03ACF172989ECF1002F9FF7 /* Captura de Tela 2023-01-31 às 21.36.22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Tela 2023-01-31 às 21.36.22.png"; sourceTree = "<group>"; };
 		A03ACF192989ECF9002F9FF7 /* Captura de Tela 2023-01-31 às 21.36.22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Tela 2023-01-31 às 21.36.22.png"; sourceTree = "<group>"; };
+		A03ACF1B2989EDA5002F9FF7 /* Captura de Tela 2023-01-31 às 21.35.59.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Captura de Tela 2023-01-31 às 21.35.59.png"; sourceTree = "<group>"; };
+		A03ACF1D2989EDB9002F9FF7 /* SWIFT.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SWIFT.jpeg; sourceTree = "<group>"; };
 		A04BA13029885AF500B431EA /* AppDIOInnovationTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppDIOInnovationTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04BA13329885AF500B431EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A04BA13529885AF500B431EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				A03ACF192989ECF9002F9FF7 /* Captura de Tela 2023-01-31 às 21.36.22.png */,
-				A03ACF172989ECF1002F9FF7 /* Captura de Tela 2023-01-31 às 21.36.22.png */,
+				A03ACF1B2989EDA5002F9FF7 /* Captura de Tela 2023-01-31 às 21.35.59.png */,
+				A03ACF1D2989EDB9002F9FF7 /* SWIFT.jpeg */,
 			);
 			path = Pics;
 			sourceTree = "<group>";
@@ -205,9 +208,10 @@
 			files = (
 				A03ACF1A2989ECF9002F9FF7 /* Captura de Tela 2023-01-31 às 21.36.22.png in Resources */,
 				A04BA14329885AF900B431EA /* LaunchScreen.storyboard in Resources */,
+				A03ACF1C2989EDA5002F9FF7 /* Captura de Tela 2023-01-31 às 21.35.59.png in Resources */,
 				A04BA14029885AF900B431EA /* Assets.xcassets in Resources */,
 				A04BA13B29885AF500B431EA /* Main.storyboard in Resources */,
-				A03ACF182989ECF1002F9FF7 /* Captura de Tela 2023-01-31 às 21.36.22.png in Resources */,
+				A03ACF1E2989EDB9002F9FF7 /* SWIFT.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
