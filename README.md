@@ -88,11 +88,11 @@ git clone git@github.com:DuAlexandre/app-dio-innovation-tasks.git
 
 <br>
 
-<img src="./AppDIOInnovationTasks/Pics/Captura de Tela 2023-01-31 às 21.35.59.png">
+<img src="https://github.com/DuAlexandre/app-dio-innovation-tasks/blob/main/AppDIOInnovationTasks/Pics/Captura%20de%20Tela%202023-01-31%20%C3%A0s%2021.35.59.png?raw=true">
 
 <br>
 
-<img src="./AppDIOInnovationTasks/Pics/Captura de Tela 2023-01-31 às 21.36.22.png">
+<img src="https://github.com/DuAlexandre/app-dio-innovation-tasks/blob/main/AppDIOInnovationTasks/Pics/Captura%20de%20Tela%202023-01-31%20%C3%A0s%2021.36.22.png?raw=true">
 
 <br>
 
