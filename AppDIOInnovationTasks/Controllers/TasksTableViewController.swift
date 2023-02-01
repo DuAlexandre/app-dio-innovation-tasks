@@ -7,20 +7,22 @@
 
 import UIKit
 
-let category = Category(name: "Shopping List", color: UIColor.green)
-
-let tasks: [Task] = [
-    Task(name: "This is my shopping list task", date: Date(), category: category)
-]
-
 class TasksTableViewController: UITableViewController {
     
     private var dateFormatter: DateFormatter = DateFormatter()
+    
+    private var tasks: [Task] = []
 
+    // Carrega a página inicial
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+    }
+    
+    // Carrega quando retornamos para tela inicial
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        self.tasks = TaskRepository.instance.getTasks()
+        self.tableView.reloadData()
     }
 
     // Indica o número de linhas que terá o projeto

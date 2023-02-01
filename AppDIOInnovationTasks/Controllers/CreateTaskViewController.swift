@@ -51,6 +51,7 @@ class CreateTaskViewController: UITableViewController, UITextFieldDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TaskDescriptionCell", for: indexPath) as! TaskDescriptionTableViewCell
+            cell.taskDescriptionTextField.delegate = self
             return cell
         }
         
@@ -70,6 +71,8 @@ class CreateTaskViewController: UITableViewController, UITextFieldDelegate {
     // MARK: - Actions buttons
 
     @IBAction func tapSaveButton(_ sender: Any) {
+        taskRepository.save(task: task)
+        self.navigationController?.popViewController(animated: true)
     }
     
     // MARK: - UITextFieldDelegate Methods
@@ -79,6 +82,10 @@ class CreateTaskViewController: UITableViewController, UITextFieldDelegate {
         if let dateCell = cell {
             self.selectedIndexPath = tableView.indexPath(for: dateCell)
         }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        self.task.name = textField.text!
     }
     // MARK: - UIView Functions
     
